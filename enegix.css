@@ -79,20 +79,20 @@
 
 
 
-.slideInfo {
+.mySlides .slideInfo {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 5%;
     transform: translate(0, -50%);
     z-index: 1;
     color: white;
 }
 
-.slideInfo h1 {
-    margin: 20px;
+.mySlides .slideInfo h1 {
+    margin: 40px;
 }
 
-.slideInfo h5 {
+.mySlides .slideInfo h5 {
     margin: 20px;
 }
 
@@ -550,3 +550,13 @@
     animation-name: fade;
     animation-duration: 30.5s;
 }
+
+/* .mySlides .slideInfo {
+    left: 10%;
+    top: 68%;
+    right: auto;
+    width: 41%;
+    margin: auto;
+    position: absolute;
+    text-align: left;
+} */
