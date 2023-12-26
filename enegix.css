@@ -28,10 +28,10 @@
 }
 
 .Nav-2 {
-    background-color: rgba(185, 182, 182, 0.637);
+    background-color: rgba(255, 255, 255, 0.952);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
 }
 
 
@@ -70,18 +70,14 @@
 }
 
 /* slider css */
-
-
-.slide-content {
+.slider {
+    max-width: 1000px;
     position: relative;
-    text-align: center;
-    color: white;
+    margin: auto;
 }
 
-.slide-content img {
-    width: 100%;
 
-}
+
 
 .slideInfo {
     position: absolute;
@@ -89,6 +85,7 @@
     left: 5%;
     transform: translate(0, -50%);
     z-index: 1;
+    color: white;
 }
 
 .slideInfo h1 {
@@ -357,4 +354,199 @@
 
 .facts-card .card i {
     color: #fdcf0f;
+}
+
+/* questions */
+.questions {
+    margin: 40px;
+}
+
+.questions-content .questions-content {
+    width: 100%;
+}
+
+.questions-content .col-md-6 {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.questions-content .cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.questions-title h1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+/* last-info */
+.last-info {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(46, 45, 47, 0.68), rgb(2, 2, 2)), url(/images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: #e4e4e4;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.last-info h4 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.75rem;
+}
+
+.last-info p {
+    color: #b3b3b3;
+}
+
+.about-us {
+    width: 30%;
+}
+
+.about-us h6 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: white;
+    margin: 15px;
+}
+
+
+.Latest-posts {
+    width: 30%;
+}
+
+.address {
+    width: 30%;
+}
+
+.input {
+    margin-top: 15px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input span {
+    background-color: #54545438;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+
+}
+
+.input span button {
+    background-color: #54545438;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+
+}
+
+.input button i {
+    color: #fdcf0f;
+
+
+}
+
+.input input {
+    background-color: #54545438;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    height: 17%;
+    border: none;
+    padding: 12px;
+    color: white;
+}
+
+.fa-solid {
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.Latest-posts li a {
+    text-decoration: none;
+    color: #b3b3b3;
+
+
+}
+
+.Latest-posts li {
+    list-style: none;
+
+
+}
+
+.Latest-posts h6 {
+    color: #585858;
+
+}
+
+.address i {
+    color: #fdcf0f;
+}
+
+.social {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social i {
+    color: #fdcf0f;
+    font-size: 24px;
+}
+
+.social button {
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #5858583b;
+}
+
+.social button:hover {
+
+    background-color: #585858;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    background-color: #292c44;
+}
+
+.last h5 {
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+.last h5 strong {
+    color: #585858;
+}
+
+
+.mySlides {
+    display: none;
+
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 30.5s;
 }
