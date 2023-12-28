@@ -165,6 +165,7 @@
         background-color: rgba(255, 255, 255, 0.952);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 998;
+
     }
 
 
@@ -178,6 +179,11 @@
         width: 100%;
         text-align: center;
         margin: 6px;
+        margin-left: 15px;
+    }
+
+    #nv {
+        font-size: 1.35rem;
     }
 
     #nv:hover {
@@ -204,7 +210,8 @@
         transform: translate(0, -50%);
         z-index: 1;
         color: white;
-        width: 30%;
+        width: 95%;
+
     }
 
     swiper-slide .slideInfo h1 {
@@ -220,6 +227,11 @@
         font-size: 1.00rem;
         width: 100%;
         margin-top: -54px;
+    }
+
+    .dropdown-menu {
+        width: 90%;
+        margin-left: 15px;
     }
 
 }
@@ -837,6 +849,30 @@ swiper-slide .slideInfo h5 {
     .about-us {
         width: 100%;
         margin: 20px;
+    }
+
+    .line {
+        width: 80px;
+        height: 2px;
+        background-color: #e4e4e4;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin: auto;
+        margin-left: 100px;
+    }
+
+    .last-info h4 {
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #h4 {
+        width: 114%;
+
     }
 
 
