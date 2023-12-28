@@ -13,6 +13,12 @@
     /* Make sure Nav-1 has a higher z-index than Nav-2 */
 }
 
+@media only screen and (max-width: 768px) {
+    .Nav-1 {
+        display: none;
+    }
+}
+
 .info-1 {
     display: flex;
     justify-content: space-between;
@@ -57,29 +63,186 @@
     margin: 20px;
 }
 
-.cont li a {
+
+
+#nv {
     text-decoration: none;
     color: #42465d !important;
     font-weight: 900;
     display: inline-block;
     margin-right: 15px;
+    width: 140%;
+    display: flex;
+    justify-content: center;
+    height: 140%;
+    border-radius: 50px;
 }
 
-.dropdown-menu {
-    min-width: auto;
+#nv:hover {
+    background-color: #5c617c;
+    text-decoration: none;
+    color: white !important;
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 15px;
+    width: 180%;
+    display: flex;
+    justify-content: center;
+    height: 140%;
+    border-radius: 50px;
+    text-align: center;
 }
 
-/* slider css */
-.slider {
-    max-width: 1000px;
-    position: relative;
+.dropdown-menu button {
+    width: 95%;
+    display: flex;
+    justify-content: center;
     margin: auto;
+    margin: 3px;
+    border: none;
+    background-color: white;
 }
 
+.dropdown-menu button .dropdown-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin: 3px;
+    margin-left: 8px;
+    color: #5c617c;
+}
+
+.dropdown-menu button .dropdown-item:hover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin: 3px;
+    margin-left: 8px;
+    background-color: #5c617c;
+    color: rgb(255, 255, 255);
+    border-radius: 45px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.drop {
+    display: inline;
+}
+
+/* Add styles for the mobile navigation button */
+#navbarToggleBtn {
+    display: none;
+    /* Initially hide the button on larger screens */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #42465d;
+}
+
+/* Adjust existing styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .conte-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navbarToggleBtn {
+        display: block;
+        /* Show the button on smaller screens */
+    }
+
+    .cont {
+        margin: auto;
+        display: none;
+        /* Hide the menu items by default */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 62px;
+        /* Adjust the top position based on your design */
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.952);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 998;
+    }
 
 
 
-.mySlides .slideInfo {
+    .cont.show {
+        display: flex;
+        /* Show the menu items when the button is clicked */
+    }
+
+    #nv,
+    .dropdown-menu button .dropdown-item {
+        width: 100%;
+        text-align: center;
+        margin: 6px;
+    }
+
+    #nv:hover {
+        background-color: #5c617c;
+        text-decoration: none;
+        color: white !important;
+        font-weight: 900;
+        display: inline-block;
+        margin-right: 15px;
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        text-align: center;
+        margin: 3px;
+    }
+
+
+
+    swiper-slide .slideInfo {
+        position: absolute;
+        top: 109%;
+        left: 5%;
+        transform: translate(0, -50%);
+        z-index: 1;
+        color: white;
+        width: 30%;
+    }
+
+    swiper-slide .slideInfo h1 {
+        margin: 3px;
+    }
+
+    swiper-slide .slideInfo h5 {
+        margin: 3px;
+        font-size: 1.00rem;
+        width: 100%;
+        margin-top: -54px;
+    }
+
+}
+
+/* slider */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+swiper-slide .slideInfo {
     position: absolute;
     top: 60%;
     left: 5%;
@@ -89,11 +252,18 @@
     width: 30%;
 }
 
-.mySlides .slideInfo h1 {
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-slide .slideInfo h1 {
     margin: 40px;
 }
 
-.mySlides .slideInfo h5 {
+swiper-slide .slideInfo h5 {
     margin: 20px;
     width: 100%;
 }
@@ -136,6 +306,52 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+
+    swiper-slide .slideInfo {
+        position: absolute;
+        top: 109%;
+        left: 5%;
+        transform: translate(0, -50%);
+        z-index: 1;
+        color: white;
+        width: 30%;
+    }
+
+    swiper-slide .slideInfo h1 {
+        margin: 3px;
+        margin-top: -214px;
+        font-size: 1.20rem;
+        width: 120%;
+        margin-left: 22px;
+    }
+
+    swiper-slide .slideInfo h5 {
+        margin: 13px;
+        width: 140%;
+    }
+
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+    }
+
+    .slide-but {
+        width: 180%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slide-but button {
+        width: 110px;
+        height: 35px;
+        border: none;
+    }
+}
+
 /* Things you get */
 .things {
     margin: 40px;
@@ -158,6 +374,9 @@
     justify-content: center;
     padding-bottom: 30px;
 }
+
+
+
 
 /* cards */
 .things-card {
@@ -204,7 +423,6 @@
 .jobs {
     margin: 40px;
     background-color: #f8f9fa !important;
-    width: 100%;
 }
 
 .listCard {
@@ -266,6 +484,35 @@
     width: 140%;
 }
 
+@media only screen and (max-width: 768px) {
+    .query {
+        width: 100%;
+        padding: 50px;
+        background: linear-gradient(rgba(46, 45, 47, 0.68), rgb(2, 2, 2)), url(/images/contactus.jpg);
+        flex-direction: column;
+    }
+
+    .query-cont {
+        color: white;
+        width: 160%;
+    }
+
+    .query-but button {
+        background-color: #fdcf0f;
+        color: #24273e;
+        border: none;
+        height: 85%;
+        width: 50%;
+    }
+
+    .query-but button:hover {
+        background-color: #b69615 !important;
+        border-color: #b69615;
+        color: #24273e;
+
+    }
+}
+
 /* about */
 .about {
     width: 90%;
@@ -322,11 +569,17 @@
     margin-right: 8px;
 }
 
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Display one column on smaller screens */
+    }
+}
+
 /* leadership */
 .leader {
     margin: 40px;
     background-color: #f8f9fa !important;
-    width: 100%;
 }
 
 .leader-cont {
@@ -336,6 +589,12 @@
 
 .leader-cont .things-title h1 {
     padding-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .leader-cont .things-title h1 {
+        width: 90%;
+    }
 }
 
 /* video */
@@ -412,6 +671,20 @@
     display: flex;
     justify-content: center;
     margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .questions-title h1 {
+        width: 103%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .questions-content .card-body h4 {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
 }
 
 /* last-info */
@@ -552,6 +825,85 @@
     background-color: #585858;
 }
 
+@media only screen and (max-width: 768px) {
+    .last-info {
+        height: 856px;
+        width: 100%;
+        display: block;
+        justify-content: space-evenly;
+        background-image: linear-gradient(rgba(46, 45, 47, 0.68), rgb(2, 2, 2)), url(/images/footer.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+
+    .about-us {
+        width: 100%;
+        margin: 20px;
+    }
+
+
+
+    .Latest-posts {
+        width: 80%;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+
+    .Latest-posts li a {
+        text-decoration: none;
+        color: #b3b3b3;
+
+
+    }
+
+    .Latest-posts li {
+        list-style: none;
+        width: 120%;
+    }
+
+    .Latest-posts ul {
+        margin-left: -30px;
+    }
+
+    .Latest-posts h6 {
+        color: #585858;
+
+    }
+
+    .address i {
+        color: #fdcf0f;
+    }
+
+    .social {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social i {
+        color: #fdcf0f;
+        font-size: 24px;
+    }
+
+    .social button {
+        padding: 8px;
+        border: none;
+        border-radius: 50%;
+        background-color: #5858583b;
+    }
+
+    .social button:hover {
+
+        background-color: #585858;
+    }
+
+}
+
+/* last */
 .last {
     display: flex;
     justify-content: center;
