@@ -10,7 +10,6 @@
     position: sticky;
     top: 0;
     z-index: 1001;
-    /* Make sure Nav-1 has a higher z-index than Nav-2 */
 }
 
 @media only screen and (max-width: 768px) {
@@ -133,10 +132,9 @@
     display: inline;
 }
 
-/* Add styles for the mobile navigation button */
+
 #navbarToggleBtn {
     display: none;
-    /* Initially hide the button on larger screens */
     background: none;
     border: none;
     font-size: 24px;
@@ -144,7 +142,7 @@
     color: #42465d;
 }
 
-/* Adjust existing styles for smaller screens */
+
 @media only screen and (max-width: 768px) {
     .conte-nav {
         display: flex;
@@ -153,19 +151,16 @@
 
     #navbarToggleBtn {
         display: block;
-        /* Show the button on smaller screens */
     }
 
     .cont {
         margin: auto;
         display: none;
-        /* Hide the menu items by default */
         flex-direction: column;
         align-items: center;
         width: 100%;
         position: absolute;
         top: 62px;
-        /* Adjust the top position based on your design */
         left: 0;
         background-color: rgba(255, 255, 255, 0.952);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -176,7 +171,6 @@
 
     .cont.show {
         display: flex;
-        /* Show the menu items when the button is clicked */
     }
 
     #nv,
@@ -215,6 +209,10 @@
 
     swiper-slide .slideInfo h1 {
         margin: 3px;
+        margin-top: -214px;
+        font-size: 1.20rem;
+        width: 133%;
+        margin-left: 22px;
     }
 
     swiper-slide .slideInfo h5 {
@@ -322,13 +320,13 @@ swiper-slide .slideInfo h5 {
         margin: 3px;
         margin-top: -214px;
         font-size: 1.20rem;
-        width: 120%;
+        width: 133%;
         margin-left: 22px;
     }
 
     swiper-slide .slideInfo h5 {
         margin: 13px;
-        width: 140%;
+        width: 160%;
     }
 
 
@@ -340,7 +338,7 @@ swiper-slide .slideInfo h5 {
     }
 
     .slide-but {
-        width: 180%;
+        width: 200%;
         display: flex;
         justify-content: space-between;
     }
@@ -572,7 +570,6 @@ swiper-slide .slideInfo h5 {
 @media only screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-        /* Display one column on smaller screens */
     }
 }
 
@@ -935,13 +932,3 @@ swiper-slide .slideInfo h5 {
     animation-name: fade;
     animation-duration: 30.5s;
 }
-
-/* .mySlides .slideInfo {
-    left: 10%;
-    top: 68%;
-    right: auto;
-    width: 41%;
-    margin: auto;
-    position: absolute;
-    text-align: left;
-} */
