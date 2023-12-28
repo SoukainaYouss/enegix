@@ -86,6 +86,7 @@
     transform: translate(0, -50%);
     z-index: 1;
     color: white;
+    width: 30%;
 }
 
 .mySlides .slideInfo h1 {
@@ -94,6 +95,7 @@
 
 .mySlides .slideInfo h5 {
     margin: 20px;
+    width: 100%;
 }
 
 .slide-but {
@@ -104,7 +106,7 @@
 
 .slide-but button {
     width: 150px;
-    height: 40px;
+    height: 45px;
     border: none;
 }
 
@@ -114,9 +116,22 @@
     color: white;
 }
 
+#but-1:hover {
+    background-color: #1b1e35;
+    border-color: #1b1e35;
+    color: white;
+}
+
 #but-2 {
     background-color: #fdd428 !important;
     border-color: #fdcf0f;
+    color: #24273e;
+
+}
+
+#but-2:hover {
+    background-color: #b69615 !important;
+    border-color: #b69615;
     color: #24273e;
 
 }
@@ -211,6 +226,15 @@
     width: 150px;
 }
 
+.jobs-but button:hover {
+    border: none;
+    background-color: #191b2e;
+    border-color: #191b2e;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+
 /* query */
 .query {
     width: 100%;
@@ -229,8 +253,17 @@
     background-color: #fdcf0f;
     color: #24273e;
     border: none;
-    height: 45px;
-    width: 100px;
+    height: 55%;
+    width: 140%;
+}
+
+.query-but button:hover {
+    background-color: #b69615 !important;
+    border-color: #b69615;
+    color: #24273e;
+    border: none;
+    height: 55%;
+    width: 140%;
 }
 
 /* about */
