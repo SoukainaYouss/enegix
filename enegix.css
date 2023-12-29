@@ -1,3 +1,8 @@
+* {
+    font-family: 'Montserrat';
+    color: black !important;
+}
+
 .Nav-1 {
     display: flex;
     justify-content: space-around;
@@ -22,14 +27,24 @@
     display: flex;
     justify-content: space-between;
     width: 40%;
+
+}
+
+.info-1 p {
+
+    color: white !important;
 }
 
 .info-2 {
     display: flex;
 }
 
+.info-2 p {
+    color: white !important;
+}
+
 .Nav-1 p i {
-    color: yellow;
+    color: yellow !important;
 }
 
 .Nav-2 {
@@ -120,7 +135,7 @@
     margin: 3px;
     margin-left: 8px;
     background-color: #5c617c;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     border-radius: 45px;
 }
 
@@ -209,7 +224,7 @@
         left: 5%;
         transform: translate(0, -50%);
         z-index: 1;
-        color: white;
+        color: white !important;
         width: 95%;
 
     }
@@ -220,6 +235,7 @@
         font-size: 1.20rem;
         width: 133%;
         margin-left: 22px;
+        color: white !important;
     }
 
     swiper-slide .slideInfo h5 {
@@ -258,7 +274,7 @@ swiper-slide .slideInfo {
     left: 5%;
     transform: translate(0, -50%);
     z-index: 1;
-    color: white;
+    color: white !important;
     width: 30%;
 }
 
@@ -270,12 +286,15 @@ swiper-slide img {
 }
 
 swiper-slide .slideInfo h1 {
-    margin: 40px;
+    margin: 20px;
+    color: white !important;
+    ;
 }
 
 swiper-slide .slideInfo h5 {
     margin: 20px;
     width: 100%;
+    color: white !important;
 }
 
 .slide-but {
@@ -293,26 +312,26 @@ swiper-slide .slideInfo h5 {
 #but-1 {
     background-color: #24273e;
     border-color: #24273e;
-    color: white;
+    color: white !important;
 }
 
 #but-1:hover {
     background-color: #1b1e35;
     border-color: #1b1e35;
-    color: white;
+    color: white !important;
 }
 
 #but-2 {
-    background-color: #fdd428 !important;
+    background-color: #fdd428;
     border-color: #fdcf0f;
-    color: #24273e;
+    color: #24273e !important;
 
 }
 
 #but-2:hover {
-    background-color: #b69615 !important;
+    background-color: #b69615;
     border-color: #b69615;
-    color: #24273e;
+    color: #24273e !important;
 
 }
 
@@ -324,7 +343,7 @@ swiper-slide .slideInfo h5 {
         left: 5%;
         transform: translate(0, -50%);
         z-index: 1;
-        color: white;
+        color: white !important;
         width: 30%;
     }
 
@@ -339,6 +358,8 @@ swiper-slide .slideInfo h5 {
     swiper-slide .slideInfo h5 {
         margin: 13px;
         width: 160%;
+        color: white !important;
+        ;
     }
 
 
@@ -409,7 +430,7 @@ swiper-slide .slideInfo h5 {
 
 .card-body h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500 !important;
     text-transform: capitalize;
     margin-bottom: 40px;
@@ -449,7 +470,7 @@ swiper-slide .slideInfo h5 {
     border: none;
     background-color: #24273e;
     border-color: #24273e;
-    color: white;
+    color: white !important;
     height: 40px;
     width: 150px;
 }
@@ -458,7 +479,7 @@ swiper-slide .slideInfo h5 {
     border: none;
     background-color: #191b2e;
     border-color: #191b2e;
-    color: white;
+    color: white !important;
     height: 40px;
     width: 150px;
 }
@@ -473,8 +494,13 @@ swiper-slide .slideInfo h5 {
 }
 
 .query-cont {
-    color: white;
     width: 65%;
+}
+
+.query-cont h1,
+h4 {
+    color: white !important;
+
 }
 
 .query-but button {
@@ -503,7 +529,7 @@ swiper-slide .slideInfo h5 {
     }
 
     .query-cont {
-        color: white;
+        color: white !important;
         width: 160%;
     }
 
@@ -638,7 +664,12 @@ swiper-slide .slideInfo h5 {
     color: #fdcf0f;
 }
 
+.features h4 {
+    color: black !important;
+}
+
 /* facts */
+
 .facts {
     width: 100%;
     padding: 100px;
@@ -649,12 +680,16 @@ swiper-slide .slideInfo h5 {
 }
 
 .facts-card .card {
-    background-color: #ffffff3a;
-    color: white;
+    background-color: #ffffff3a !important;
+    color: white !important;
 }
 
 .facts-card .card i {
-    color: #fdcf0f;
+    color: #fdcf0f !important;
+}
+
+.facts-card .card h5 {
+    color: #ffffff !important;
 }
 
 /* questions */
@@ -680,6 +715,16 @@ swiper-slide .slideInfo h5 {
     display: flex;
     justify-content: center;
     margin: 30px;
+
+}
+
+.questions h4 {
+    color: black !important;
+
+}
+
+.questions .card-body h4 {
+    margin-left: 70px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -710,19 +755,19 @@ swiper-slide .slideInfo h5 {
 .line {
     width: 80px;
     height: 2px;
-    background-color: #e4e4e4;
+    background-color: #e4e4e4 !important;
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
 .last-info h4 {
-    color: white;
+    color: white !important;
     text-transform: capitalize;
     font-size: 1.75rem;
 }
 
 .last-info p {
-    color: #b3b3b3;
+    color: #b3b3b3 !important;
 }
 
 .about-us {
@@ -732,7 +777,7 @@ swiper-slide .slideInfo h5 {
 .about-us h6 {
     text-transform: capitalize;
     font-size: 1.1rem;
-    color: white;
+    color: white !important;
     margin: 15px;
 }
 
@@ -768,7 +813,7 @@ swiper-slide .slideInfo h5 {
 }
 
 .input button i {
-    color: #fdcf0f;
+    color: #fdcf0f !important;
 
 
 }
@@ -791,7 +836,7 @@ swiper-slide .slideInfo h5 {
 
 .Latest-posts li a {
     text-decoration: none;
-    color: #b3b3b3;
+    color: #b3b3b3 !important;
 
 
 }
@@ -803,12 +848,12 @@ swiper-slide .slideInfo h5 {
 }
 
 .Latest-posts h6 {
-    color: #585858;
+    color: #585858 !important;
 
 }
 
 .address i {
-    color: #fdcf0f;
+    color: #fdcf0f !important;
 }
 
 .social {
@@ -818,7 +863,7 @@ swiper-slide .slideInfo h5 {
 }
 
 .social i {
-    color: #fdcf0f;
+    color: #fdcf0f !important;
     font-size: 24px;
 }
 
@@ -826,12 +871,12 @@ swiper-slide .slideInfo h5 {
     padding: 8px;
     border: none;
     border-radius: 50%;
-    background-color: #5858583b;
+    background-color: #5858583b !important;
 }
 
 .social button:hover {
 
-    background-color: #585858;
+    background-color: #585858 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -854,7 +899,7 @@ swiper-slide .slideInfo h5 {
     .line {
         width: 80px;
         height: 2px;
-        background-color: #e4e4e4;
+        background-color: #e4e4e4 !important;
         margin-top: 15px;
         margin-bottom: 30px;
         margin: auto;
@@ -862,7 +907,7 @@ swiper-slide .slideInfo h5 {
     }
 
     .last-info h4 {
-        color: white;
+        color: white !important;
         text-transform: capitalize;
         font-size: 1.75rem;
         display: flex;
@@ -888,7 +933,7 @@ swiper-slide .slideInfo h5 {
 
     .Latest-posts li a {
         text-decoration: none;
-        color: #b3b3b3;
+        color: #b3b3b3 !important;
 
 
     }
@@ -903,12 +948,12 @@ swiper-slide .slideInfo h5 {
     }
 
     .Latest-posts h6 {
-        color: #585858;
+        color: #585858 !important;
 
     }
 
     .address i {
-        color: #fdcf0f;
+        color: #fdcf0f !important;
     }
 
     .social {
@@ -918,7 +963,7 @@ swiper-slide .slideInfo h5 {
     }
 
     .social i {
-        color: #fdcf0f;
+        color: #fdcf0f !important;
         font-size: 24px;
     }
 
@@ -926,12 +971,12 @@ swiper-slide .slideInfo h5 {
         padding: 8px;
         border: none;
         border-radius: 50%;
-        background-color: #5858583b;
+        background-color: #5858583b !important;
     }
 
     .social button:hover {
 
-        background-color: #585858;
+        background-color: #585858 !important;
     }
 
 }
@@ -940,18 +985,18 @@ swiper-slide .slideInfo h5 {
 .last {
     display: flex;
     justify-content: center;
-    background-color: #292c44;
+    background-color: #292c44 !important;
 }
 
 .last h5 {
-    color: white;
+    color: white !important;
     padding: 10px;
     font-size: 17px;
 
 }
 
 .last h5 strong {
-    color: #585858;
+    color: #8a8a8a !important;
 }
 
 
@@ -968,3 +1013,100 @@ swiper-slide .slideInfo h5 {
     animation-name: fade;
     animation-duration: 30.5s;
 }
+
+/* service description */
+.contServ {
+    text-align: center;
+    margin: 20px;
+}
+
+.titleServ {
+    margin-bottom: 20px;
+}
+
+.titleServ h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b1e35;
+}
+
+
+.descServ {
+    padding: 7px;
+}
+
+/* service1 */
+.serv1 {
+    width: 90%;
+    margin: auto;
+}
+
+.serv1 button {
+    width: 180px;
+    color: white !important;
+}
+
+.serv1 button:hover {
+    width: 180px;
+
+}
+
+.serv1 h5 {
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500 !important;
+    text-align: center !important;
+}
+
+.serv1-content {
+    margin: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+}
+
+
+
+.fa-square-check {
+    color: #fdcf0f;
+}
+
+.serv1 .p {
+    margin: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.serv1 .items {
+    padding-top: 5px;
+    list-style: none;
+}
+
+.serv1 .items li {
+    color: #1a1c27;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: -16px;
+}
+
+.serv1 .items li i {
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* contact */
