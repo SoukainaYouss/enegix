@@ -12,6 +12,55 @@
 </head>
 
 <body>
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
+    $email = $_POST["email"];
+    $telephone = $_POST["telephone"];
+    $ville = $_POST["ville"];
+    $state = $_POST["state"];
+    $sujet = $_POST["sujet"];
+    $message = $_POST["message"];
+
+    $mail = new PHPMailer(true);
+
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';  
+        $mail->SMTPAuth = true;
+        $mail->Username = 'soukainayouss03@gmail.com';  
+        $mail->Password = 'qral qxvg wchq xrly'; 
+        $mail->SMTPSecure = 'ssl';  
+        $mail->Port = 465;  
+
+       
+        $mail->addAddress('soukainayouss03@gmail.com');
+        $mail->setFrom($email, "$nom $prenom");
+
+     
+
+        $mail->Subject = "Nouveau message de $nom $prenom";
+    $telephone = $_POST["telephone"];
+        $mail->Body = "Email: $email\nNom: $nom\nPrenom: $prenom\nTelephone: $telephone\nVille: $ville\nType: $state\nSujet: $sujet\nMessage:\n$message";
+
+        $mail->send();
+        echo 'Email has been sent successfully!';
+    } catch (Exception $e) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+    }
+}
+?>
+
+
+
     <div>
         <div class="navbars">
             <nav class="Nav-1">
@@ -42,8 +91,8 @@
                             </ul>
                         </li>
                         <li><a id="nv" href="#">News</a></li>
-                        <li><a id="nv" href="#">Blog</a></li>
-                        <li> <a id="nv" href="contact.html">Contacts</a></li>
+                        <li><a id="nv" href="blog.html">Blog</a></li>
+                        <li> <a id="nv" href="contact.php">Contacts</a></li>
                         <li><a id="nv" href="#">Devis</a></li>
                     </ul>
                 </div>
@@ -67,30 +116,30 @@
                 <div class="grid-container">
                     <div class="image-container">
                         <div class="contactForm">
-                            <form class="row g-3">
+                            <form class="row g-3" method="post" action="">
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Nom</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <input type="text" class="form-control"  name="nom">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Prenom</label>
-                                    <input type="password" class="form-control" id="inputPassword4">
+                                    <input type="text" class="form-control" name="prenom">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <input type="email" class="form-control" id="inputEmail4" name="email">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Telephone</label>
-                                    <input type="password" class="form-control" id="inputPassword4">
+                                    <input type="text" class="form-control" name="telephone">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Ville</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <input type="text" class="form-control" name="ville">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputState" class="form-label">State</label>
-                                    <select id="inputState" class="form-select">
+                                    <label for="inputState" class="form-label">type</label>
+                                    <select id="inputState" class="form-select" name="state">
                                         <option selected>Choose...</option>
                                         <option>Parti</option>
                                         <option>Proff</option>
@@ -98,12 +147,12 @@
                                 </div>
                                 <div class="col-12">
                                     <label for="inputAddress" class="form-label">Sujet</label>
-                                    <input type="text" class="form-control" id="inputAddress"
+                                    <input type="text" class="form-control" id="inputAddress" name="sujet"
                                         placeholder="1234 Main St">
                                 </div>
                                 <div class="col-12">
                                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
 
 
@@ -117,7 +166,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <button type="submit" class="btn btn-primary">Contacter nous</button>
                                 </div>
                             </form>
 
